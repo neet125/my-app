@@ -1,0 +1,301 @@
+:root {
+  font-family: "Segoe UI", sans-serif;
+  color: #1f2937;
+  background:
+    radial-gradient(circle at top, #f2e9d8 0%, #f7f4ec 42%, #efe8da 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+
+.card {
+  margin-bottom: 20px;
+  padding: 24px;
+  border: 1px solid #d6c9b3;
+  border-radius: 20px;
+  background: rgba(255, 252, 246, 0.9);
+  box-shadow: 0 16px 40px rgba(72, 52, 24, 0.08);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8b6b3f;
+}
+
+.lead {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.form-block {
+  margin-bottom: 20px;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.field-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cdbda3;
+  border-radius: 12px;
+  background: #fffdfa;
+  color: inherit;
+  font: inherit;
+}
+
+.textarea-input {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.flavor-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.gram-input:disabled,
+.field-input:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.login-button-block {
+  min-height: 52px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 12px 18px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button {
+  border: 1px solid #8b6b3f;
+  background: #8b6b3f;
+  color: #fffaf0;
+}
+
+.secondary-button {
+  border: 1px solid #cdbda3;
+  background: #fffdfa;
+  color: #4b5563;
+}
+
+.primary-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.status-ok {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.status-note {
+  margin-top: 16px;
+  color: #8b6b3f;
+  font-weight: 600;
+}
+
+.status-error {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.recipe-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.recipe-list li + li {
+  margin-top: 12px;
+}
+
+.recipe-list-item {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #d6c9b3;
+  border-radius: 16px;
+  background: #fffdfa;
+  text-align: left;
+  cursor: pointer;
+}
+
+.recipe-title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.recipe-flavors {
+  display: block;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.detail-stack {
+  margin-top: 20px;
+}
+
+.detail-header-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.detail-title {
+  margin: 0 0 8px;
+}
+
+.detail-subtle {
+  margin: 0;
+  color: #6b7280;
+}
+
+.bookmark-button {
+  min-width: 52px;
+  min-height: 52px;
+  border: 1px solid #d6c9b3;
+  border-radius: 999px;
+  background: #fffdfa;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.bookmark-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dialog-card {
+  margin-top: 16px;
+  padding: 16px 18px;
+  border: 1px solid #d6c9b3;
+  border-radius: 16px;
+  background: #fff8ef;
+}
+
+.dialog-title {
+  margin: 0 0 14px;
+  font-weight: 700;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.detail-block {
+  padding: 16px 18px;
+  border: 1px solid #e5dccd;
+  border-radius: 16px;
+  background: #fffdfa;
+}
+
+.detail-block-muted {
+  background: #f8f3ea;
+}
+
+.detail-heading {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.detail-list li + li {
+  margin-top: 6px;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.option-field {
+  margin-bottom: 0;
+}
+
+.danger-button {
+  padding: 12px 18px;
+  border: 1px solid #e5b2ad;
+  border-radius: 999px;
+  background: #fff4f2;
+  color: #9f1239;
+  font: inherit;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.tab-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.tab-button {
+  padding: 10px 16px;
+  border: 1px solid #d6c9b3;
+  border-radius: 999px;
+  background: #fffdfa;
+  color: #4b5563;
+  font: inherit;
+  font-weight: 700;
+}
+
+.tab-button-active {
+  border-color: #8b6b3f;
+  background: #8b6b3f;
+  color: #fffaf0;
+}

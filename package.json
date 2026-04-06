@@ -1,0 +1,18 @@
+{
+  "name": "my-app",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w @my-app/web",
+    "dev:api": "npm run dev -w @my-app/api",
+    "build": "npm run build -ws",
+    "db:migrate:sql": "psql %DATABASE_URL% -f db\\migrations\\001_initial_schema.sql",
+    "db:seed:sql": "psql %DATABASE_URL% -f db\\seeds\\001_master_data.sql"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
