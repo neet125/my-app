@@ -1,5 +1,5 @@
-import { getPool } from "../../db/pool";
-import type { AlcoholsResponse, FlavorItem, FlavorsResponse, MasterItem } from "./master-types";
+import { getPool } from "../../db/pool.js";
+import type { AlcoholsResponse, FlavorItem, FlavorsResponse, MasterItem } from "./master-types.js";
 
 async function fetchAlcoholMasterItems(): Promise<MasterItem[]> {
   const result = await getPool().query<MasterItem>(

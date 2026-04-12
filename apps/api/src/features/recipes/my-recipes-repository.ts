@@ -1,5 +1,5 @@
-import { getPool } from "../../db/pool";
-import type { RecipeSearchItem, RecipeSearchResponse } from "./recipe-search-types";
+import { getPool } from "../../db/pool.js";
+import type { RecipeSearchItem, RecipeSearchResponse } from "./recipe-search-types.js";
 
 type MyRecipeRow = {
   flavorId: number;

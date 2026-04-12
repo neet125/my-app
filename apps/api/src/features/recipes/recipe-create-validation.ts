@@ -1,10 +1,10 @@
-import { getPool } from "../../db/pool";
+import { getPool } from "../../db/pool.js";
 import type {
   FieldErrors,
   RecipeCreateBody,
   RecipeCreateFlavorInput,
   RecipeSize
-} from "./recipe-create-types";
+} from "./recipe-create-types.js";
 
 const SIZE_GRAMS: Record<RecipeSize, number> = {
   regular: 12,

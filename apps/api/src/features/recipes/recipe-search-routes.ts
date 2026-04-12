@@ -1,6 +1,6 @@
 import type { FastifyPluginAsync } from "fastify";
-import { searchRecipesByFlavorId } from "./recipe-search-repository";
-import type { RecipeSearchResponse } from "./recipe-search-types";
+import { searchRecipesByFlavorId } from "./recipe-search-repository.js";
+import type { RecipeSearchResponse } from "./recipe-search-types.js";
 
 type RouteErrorResponse = {
   message: string;

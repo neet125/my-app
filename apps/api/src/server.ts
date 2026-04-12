@@ -1,5 +1,5 @@
-import "./load-env";
-import { createApp } from "./app/create-app";
+import "./load-env.js";
+import { createApp } from "./app/create-app.js";
 
 const port = Number(process.env.PORT ?? 3000);
 const host = process.env.HOST ?? "0.0.0.0";

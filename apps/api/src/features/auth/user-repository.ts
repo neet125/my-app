@@ -1,4 +1,4 @@
-import { getPool } from "../../db/pool";
+import { getPool } from "../../db/pool.js";
 
 export type AuthUser = {
   googleUserId: string;

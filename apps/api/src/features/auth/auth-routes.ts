@@ -1,7 +1,7 @@
 import type { FastifyPluginAsync } from "fastify";
-import { setAuthSession, type SessionIdentity } from "./session";
-import { verifyGoogleCredential } from "./google-auth";
-import { upsertUserFromGoogleLogin } from "./user-repository";
+import { setAuthSession, type SessionIdentity } from "./session.js";
+import { verifyGoogleCredential } from "./google-auth.js";
+import { upsertUserFromGoogleLogin } from "./user-repository.js";
 
 type GoogleLoginBody = {
   credential?: string;

@@ -1,10 +1,10 @@
 import type { FastifyPluginAsync } from "fastify";
-import { requireAuth } from "../auth/auth-plugin";
+import { requireAuth } from "../auth/auth-plugin.js";
 import {
   createBookmark,
   deleteBookmark,
   recipeExists
-} from "./recipe-bookmark-repository";
+} from "./recipe-bookmark-repository.js";
 
 function parseRecipeId(value: string) {
   const recipeId = Number(value);

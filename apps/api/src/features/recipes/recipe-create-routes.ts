@@ -1,11 +1,11 @@
 import type { FastifyPluginAsync } from "fastify";
-import { requireAuth } from "../auth/auth-plugin";
-import { createRecipeWithFlavors } from "./recipe-create-repository";
+import { requireAuth } from "../auth/auth-plugin.js";
+import { createRecipeWithFlavors } from "./recipe-create-repository.js";
 import type {
   RecipeCreateBody,
   ValidationErrorResponse
-} from "./recipe-create-types";
-import { validateRecipeCreateBody } from "./recipe-create-validation";
+} from "./recipe-create-types.js";
+import { validateRecipeCreateBody } from "./recipe-create-validation.js";
 
 export const recipeCreateRoutes: FastifyPluginAsync = async (app) => {
   app.post<{ Body: RecipeCreateBody }>(

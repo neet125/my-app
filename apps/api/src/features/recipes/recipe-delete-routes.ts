@@ -1,6 +1,6 @@
 import type { FastifyPluginAsync } from "fastify";
-import { requireAuth } from "../auth/auth-plugin";
-import { deleteRecipeByOwner } from "./recipe-delete-repository";
+import { requireAuth } from "../auth/auth-plugin.js";
+import { deleteRecipeByOwner } from "./recipe-delete-repository.js";
 
 function parseRecipeId(value: string) {
   const recipeId = Number(value);

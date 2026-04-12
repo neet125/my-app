@@ -1,7 +1,7 @@
 import type { FastifyPluginAsync } from "fastify";
-import { requireAuth } from "../auth/auth-plugin";
-import { fetchMyBookmarks, fetchMyRecipes } from "./my-recipes-repository";
-import type { RecipeSearchResponse } from "./recipe-search-types";
+import { requireAuth } from "../auth/auth-plugin.js";
+import { fetchMyBookmarks, fetchMyRecipes } from "./my-recipes-repository.js";
+import type { RecipeSearchResponse } from "./recipe-search-types.js";
 
 type RouteErrorResponse = {
   message: string;

@@ -1,16 +1,16 @@
 import cookie from "@fastify/cookie";
 import cors from "@fastify/cors";
 import Fastify from "fastify";
-import { authPlugin } from "../features/auth/auth-plugin";
-import { getSessionCookieName, verifySessionToken } from "../features/auth/session";
-import { authRoutes } from "../features/auth/auth-routes";
-import { masterRoutes } from "../features/masters/master-routes";
-import { myRecipesRoutes } from "../features/recipes/my-recipes-routes";
-import { recipeBookmarkRoutes } from "../features/recipes/recipe-bookmark-routes";
-import { recipeDeleteRoutes } from "../features/recipes/recipe-delete-routes";
-import { recipeDetailRoutes } from "../features/recipes/recipe-detail-routes";
-import { recipeCreateRoutes } from "../features/recipes/recipe-create-routes";
-import { recipeSearchRoutes } from "../features/recipes/recipe-search-routes";
+import { authPlugin } from "../features/auth/auth-plugin.js";
+import { getSessionCookieName, verifySessionToken } from "../features/auth/session.js";
+import { authRoutes } from "../features/auth/auth-routes.js";
+import { masterRoutes } from "../features/masters/master-routes.js";
+import { myRecipesRoutes } from "../features/recipes/my-recipes-routes.js";
+import { recipeBookmarkRoutes } from "../features/recipes/recipe-bookmark-routes.js";
+import { recipeDeleteRoutes } from "../features/recipes/recipe-delete-routes.js";
+import { recipeDetailRoutes } from "../features/recipes/recipe-detail-routes.js";
+import { recipeCreateRoutes } from "../features/recipes/recipe-create-routes.js";
+import { recipeSearchRoutes } from "../features/recipes/recipe-search-routes.js";
 
 export function createApp() {
   const app = Fastify({

@@ -1,5 +1,5 @@
-import { getPool } from "../../db/pool";
-import type { RecipeDetailResponse } from "./recipe-search-types";
+import { getPool } from "../../db/pool.js";
+import type { RecipeDetailResponse } from "./recipe-search-types.js";
 
 type RecipeDetailRow = {
   alcoholName: string | null;

@@ -1,6 +1,6 @@
 import type { FastifyPluginAsync } from "fastify";
-import { fetchAlcohols, fetchFlavors } from "./master-repository";
-import type { AlcoholsResponse, FlavorsResponse } from "./master-types";
+import { fetchAlcohols, fetchFlavors } from "./master-repository.js";
+import type { AlcoholsResponse, FlavorsResponse } from "./master-types.js";
 
 type RouteErrorResponse = {
   message: string;

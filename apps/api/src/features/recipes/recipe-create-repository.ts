@@ -1,6 +1,6 @@
 import type { PoolClient } from "pg";
-import { getPool } from "../../db/pool";
-import type { RecipeCreateBody } from "./recipe-create-types";
+import { getPool } from "../../db/pool.js";
+import type { RecipeCreateBody } from "./recipe-create-types.js";
 
 export async function createRecipeWithFlavors(input: {
   recipe: RecipeCreateBody;
